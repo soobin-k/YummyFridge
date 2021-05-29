@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yummy Fridge   "
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnmanager"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_gravity="right"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/addIngredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="이름"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/addType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+        <DatePicker
+            android:id="@+id/addDate"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFC0CB"
+                android:text=" 사진찍기 " />
+
+            <Button
+                android:id="@+id/btn_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFC0CB"
+                android:text=" 갤러리 선택 " />
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/picture" />
+    <Button
+        android:id="@+id/btn_addFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F08080"
+        android:text="재료 저장" />
+</LinearLayout>
